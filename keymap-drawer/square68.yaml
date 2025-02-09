@@ -1,9 +1,9 @@
 layers:
   QWERT:
-  - Ctl+ X
+  - Ctl+X
   - F2
-  - Ctl+ C
-  - Ctl+ V
+  - Ctl+C
+  - Ctl+V
   - F5
   - {t: '`', s: '~'}
   - $$mdi:backspace-reverse-outline$$
