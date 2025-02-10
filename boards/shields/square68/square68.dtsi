@@ -6,6 +6,95 @@
 
 #include <dt-bindings/zmk/matrix_transform.h>
 #include <dt-bindings/led/led.h>
+#include <physical_layouts.dtsi>
+
+/ {
+    square68_layout0: square68_layout_0 {
+        compatible = "zmk,physical-layout";
+        display-name = "Square68";
+
+        kscan = <&kscan0>;
+        transform = <&matrix_transform0>;
+
+        keys  //                     w   h    x    y     rot    rx    ry
+            = <&key_physical_attrs 100 100  575    0       0     0     0>
+            , <&key_physical_attrs 100 100 1850    0       0     0     0>
+            , <&key_physical_attrs 100 100  475   13       0     0     0>
+            , <&key_physical_attrs 100 100  675   13       0     0     0>
+            , <&key_physical_attrs 100 100 1750   13       0     0     0>
+            , <&key_physical_attrs 100 100 1950   13       0     0     0>
+            , <&key_physical_attrs 100 100  375   25       0     0     0>
+            , <&key_physical_attrs 100 100  775   25       0     0     0>
+            , <&key_physical_attrs 100 100 1650   25       0     0     0>
+            , <&key_physical_attrs 100 100 2050   25       0     0     0>
+            , <&key_physical_attrs 100 100  875   50       0     0     0>
+            , <&key_physical_attrs 100 100 1550   50       0     0     0>
+            , <&key_physical_attrs 100 100  575  100       0     0     0>
+            , <&key_physical_attrs 100 100 1850  100       0     0     0>
+            , <&key_physical_attrs 100 100  475  113       0     0     0>
+            , <&key_physical_attrs 100 100  675  113       0     0     0>
+            , <&key_physical_attrs 100 100 1750  113       0     0     0>
+            , <&key_physical_attrs 100 100 1950  113       0     0     0>
+            , <&key_physical_attrs 100 100  375  125       0     0     0>
+            , <&key_physical_attrs 100 100  775  125       0     0     0>
+            , <&key_physical_attrs 100 100 1650  125       0     0     0>
+            , <&key_physical_attrs 100 100 2050  125       0     0     0>
+            , <&key_physical_attrs 100 100  875  150       0     0     0>
+            , <&key_physical_attrs 100 100 1550  150       0     0     0>
+            , <&key_physical_attrs 100 100  575  200       0     0     0>
+            , <&key_physical_attrs 100 100 1850  200       0     0     0>
+            , <&key_physical_attrs 100 100  475  213       0     0     0>
+            , <&key_physical_attrs 100 100  675  213       0     0     0>
+            , <&key_physical_attrs 100 100 1750  213       0     0     0>
+            , <&key_physical_attrs 100 100 1950  213       0     0     0>
+            , <&key_physical_attrs 100 100  375  225       0     0     0>
+            , <&key_physical_attrs 100 100  775  225       0     0     0>
+            , <&key_physical_attrs 100 100 1650  225       0     0     0>
+            , <&key_physical_attrs 100 100 2050  225       0     0     0>
+            , <&key_physical_attrs 100 100  875  250       0     0     0>
+            , <&key_physical_attrs 100 100 1550  250       0     0     0>
+            , <&key_physical_attrs 100 100 1325  275       0     0     0>
+            , <&key_physical_attrs 100 100  575  300       0     0     0>
+            , <&key_physical_attrs 100 100 1850  300       0     0     0>
+            , <&key_physical_attrs 100 100  475  313       0     0     0>
+            , <&key_physical_attrs 100 100  675  313       0     0     0>
+            , <&key_physical_attrs 100 100 1750  313       0     0     0>
+            , <&key_physical_attrs 100 100 1950  313       0     0     0>
+            , <&key_physical_attrs 100 100  375  325       0     0     0>
+            , <&key_physical_attrs 100 100  775  325       0     0     0>
+            , <&key_physical_attrs 100 100 1650  325       0     0     0>
+            , <&key_physical_attrs 100 100 2050  325       0     0     0>
+            , <&key_physical_attrs 100 100  875  350       0     0     0>
+            , <&key_physical_attrs 100 100 1550  350       0     0     0>
+            , <&key_physical_attrs 100 100 1000  375       0     0     0>
+            , <&key_physical_attrs 100 100 1225  375       0     0     0>
+            , <&key_physical_attrs 100 100 1325  375       0     0     0>
+            , <&key_physical_attrs 100 100 1425  375       0     0     0>
+            , <&key_physical_attrs 100 100  575  400       0     0     0>
+            , <&key_physical_attrs 100 100 1850  400       0     0     0>
+            , <&key_physical_attrs 100 100  475  413       0     0     0>
+            , <&key_physical_attrs 100 100  675  413       0     0     0>
+            , <&key_physical_attrs 100 100 1750  413       0     0     0>
+            , <&key_physical_attrs 100 100 1950  413       0     0     0>
+            , <&key_physical_attrs 100 100  375  425       0     0     0>
+            , <&key_physical_attrs 100 100  775  425       0     0     0>
+            , <&key_physical_attrs 100 100 1650  425       0     0     0>
+            , <&key_physical_attrs 100 100 2050  425       0     0     0>
+            , <&key_physical_attrs 100 100  875  450       0     0     0>
+            , <&key_physical_attrs 100 100 1550  450       0     0     0>
+            , <&key_physical_attrs 100 100 1325  475       0     0     0>
+            , <&key_physical_attrs 100 100  500  525       0     0     0>
+            , <&key_physical_attrs 100 100  600  525       0     0     0>
+            , <&key_physical_attrs 100 100 1825  525       0     0     0>
+            , <&key_physical_attrs 100 100 1925  525       0     0     0>
+            , <&key_physical_attrs 100 100  900  375       0     0     0>
+            , <&key_physical_attrs 100 100    0 1025       0     0     0>
+            , <&key_physical_attrs 100 100  250 1250       0     0     0>
+            , <&key_physical_attrs 100 100 1500 2225       0     0     0>
+            ;
+    };
+};
+
 
 &pinctrl {
 // Other pinctrl definitions for other hardware
@@ -103,7 +192,7 @@
 / {
     chosen {
         zmk,kscan = &kscan0;
-        zmk,matrix-transform = &default_transform;
+        zmk,physical-layouts = &square68_layout0;
         zephyr,display = &oled;
         zmk,underglow = &led_strip;
     };
@@ -141,5 +230,23 @@
         ;
 
     };
+
+};
+
+&square68_layout0{
+
+	transform = <&default_transform>;
+
+	kscan = <&kscan0>;
+
+};
+
+
+
+zephyr_udc0: &usbd { 
+
+    compatible = "nordic,nrf-usbd"; 
+
+    status = "okay"; 
 
 };
