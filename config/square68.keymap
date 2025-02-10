@@ -1,8 +1,11 @@
 #include <behaviors/mouse_keys.dtsi>
+#include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/mouse.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
 #define ZMK_MOUSE_DEFAULT_MOVE_VAL 1200  // 600
@@ -78,13 +81,13 @@
         layer_2 {
             display-name = "CONTROL";
             bindings = <
-&trans           &trans           &trans           &trans           &trans           &trans           &trans        &trans           &trans          &trans          &trans   &trans
-&bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4     &trans           &trans        &trans           &trans          &trans          &trans   &trans
-&bt BT_CLR       &bt BT_CLR_ALL   &trans           &trans           &trans           &bootloader      &bootloader   &trans           &trans          &trans          &trans   &trans
-&rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &rgb_ug RGB_EFF  &trans           &trans        &trans           &trans          &trans          &trans   &trans
-&rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_EFF  &rgb_ug RGB_TOG  &trans        &trans           &trans          &trans          &trans   &trans
-                 &trans           &trans           &trans           &trans                                          &trans           &trans          &trans          &trans
-                                                                                     &kp C_MUTE       &mmv MOVE_UP  &mmv MOVE_RIGHT  &mmv MOVE_DOWN  &mmv MOVE_LEFT  &kp END
+&trans           &trans           &trans           &trans           &trans           &studio_unlock   &trans           &trans           &trans           &trans           &trans           &studio_unlock
+&bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4     &trans           &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4     &trans
+&bt BT_CLR       &bt BT_CLR_ALL   &trans           &trans           &trans           &bootloader      &bt BT_CLR       &bt BT_CLR_ALL   &trans           &trans           &trans           &bootloader
+&rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &rgb_ug RGB_EFF  &trans           &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &rgb_ug RGB_EFF  &trans
+&rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_EFF  &rgb_ug RGB_TOG  &rgb_ug RGB_BRD  &rgb_ug RGB_BRD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_EFR  &rgb_ug RGB_TOG
+                 &trans           &trans           &trans           &trans                                             &trans           &trans           &trans           &trans
+                                                                                     &kp C_MUTE       &mmv MOVE_UP     &mmv MOVE_RIGHT  &mmv MOVE_DOWN   &mmv MOVE_LEFT   &kp END
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
