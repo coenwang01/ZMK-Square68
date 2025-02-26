@@ -1,11 +1,11 @@
 layers:
   QWERT:
-  - Ctl+X
+  - F1
   - F2
-  - Ctl+C
-  - Ctl+V
+  - F3
+  - F4
   - F5
-  - {t: '`', s: '~'}
+  - F6
   - $$mdi:backspace-reverse-outline$$
   - {t: '-', s: _}
   - {t: '=', s: +}
@@ -54,7 +54,7 @@ layers:
   - V
   - B
   - $$mdi:apple-keyboard-shift$$
-  - $$mdi:apple-keyboard-shift$$
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - N
   - M
   - {t: ',', s: <}
