@@ -42,7 +42,7 @@ layers:
   - F
   - G
   - $$mdi:apple-keyboard-caps$$
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - $$mdi:keyboard-esc$$
   - H
   - J
   - K
